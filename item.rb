@@ -3,6 +3,8 @@
 class Item
 	TYPES = [:potion, :sword]
 
+  # TODO: so you don't actually need an attr_accessor on a constant like this. You can look up the TYPES constant from outside the
+  # class using Item::TYPES without explicitly defining an accessor
 	attr_accessor :TYPES
 
 	def initialize

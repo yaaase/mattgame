@@ -2,6 +2,7 @@
 #have monsters drop items
 
 class Monster
+  # TODO same with player, spell out these names
 	attr_accessor :hp, :ap
 
 	MAX_HP = 10
@@ -15,6 +16,7 @@ class Monster
 		@hp > 0
 	end
 
+  # TODO often mutative methods - methods which directly change the state of the object they are called on - end with a ! so you might want to rename this def hurt!(amount)
 	def hurt(amount)
 		@hp -= amount
 	end
